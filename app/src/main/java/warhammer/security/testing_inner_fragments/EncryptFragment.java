@@ -139,8 +139,8 @@ public class EncryptFragment extends Fragment {
     public View prepareLayout(View view){
         switch(getCipher()){
             case 0://case it's Caesar
-                tv_shift =(TextView)view.findViewById(R.id.tv_shift);
-                spinner1=(Spinner) view.findViewById(R.id.spinner1);
+                tv_shift = view.findViewById(R.id.tv_shift);
+                spinner1= view.findViewById(R.id.spinner1);
                 spinner1.setVisibility(View.VISIBLE);
                 tv_shift.setVisibility(View.VISIBLE);
                 break;

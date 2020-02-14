@@ -45,8 +45,8 @@ public class AllAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View view=inflater.inflate(R.layout.my_list_item_1,null);
-        ImageView img=(ImageView)view.findViewById(R.id.list_item_1_img);
-        TextView txt=(TextView)view.findViewById(R.id.list_item_1_txt);
+        ImageView img= view.findViewById(R.id.list_item_1_img);
+        TextView txt= view.findViewById(R.id.list_item_1_txt);
         img.setImageResource(images[position]);
         txt.setText(texts[position]);
         return view;

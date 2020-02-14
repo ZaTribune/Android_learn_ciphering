@@ -23,7 +23,7 @@
             android:id="@+id/btn_drawer"
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:background="@drawable/drawer_me"
+            android:background="@drawable/drawer"
             android:onClick="controlDrawer"
             />
         <TextView

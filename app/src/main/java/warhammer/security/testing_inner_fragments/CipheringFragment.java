@@ -1,6 +1,8 @@
 package warhammer.security.testing_inner_fragments;
 
 
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import com.google.android.material.tabs.TabLayout;
 import androidx.fragment.app.Fragment;
@@ -60,9 +62,6 @@ public class CipheringFragment extends Fragment {
             //in case we used the clear button instead of the usual way
             cipher=getCipher();
         }
-        //to change the header
-        action_bar_header= getActivity().findViewById(R.id.action_bar_header);
-        action_bar_header.setText("Testing "+getResources().getStringArray(R.array.ciphers)[getCipher()]);
 
         viewPager= view.findViewById(R.id.viewpager);
         tabLayout= view.findViewById(R.id.tabs);
@@ -73,22 +72,27 @@ public class CipheringFragment extends Fragment {
             adapter.addFragment(AttackFragment.newInstance(cipher),"Attack");
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+        return view;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        //to change the header
+        action_bar_header= ((Activity)context).findViewById(R.id.action_bar_header);
+        action_bar_header.setText("Testing "+getResources().getStringArray(R.array.ciphers)[getCipher()]);
         // to add the capability of clearing the screen
-        clear= getActivity().findViewById(R.id.btn_clear);
+        clear= ((Activity)context).findViewById(R.id.btn_clear);
         clear.setVisibility(View.VISIBLE);
         clear.setOnClickListener(v -> {
             FragmentManager manager=getFragmentManager();
             int count = manager.getBackStackEntryCount();
             FragmentTransaction fragmentTransaction=manager.beginTransaction();
-
             fragmentTransaction.replace(R.id.content_frame,new CipheringFragment(getCipher())).addToBackStack("Ciphering");
             manager.popBackStack();
             fragmentTransaction.commit();
         });
-
-        return view;
     }
-
 
     @Override
     public void onDetach() {

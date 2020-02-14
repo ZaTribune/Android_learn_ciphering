@@ -30,7 +30,6 @@
             android:theme="@style/list_theme_0">
 
             <ImageView
-                android:id="@+id/drawer_header"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:src="@drawable/header0"

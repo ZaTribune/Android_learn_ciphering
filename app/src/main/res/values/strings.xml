@@ -6,4 +6,15 @@
     <string name="testing">Testing</string>
     <string name="learning">Learning</string>
     <string name="about">About</string>
+    <string name="about_info">
+        What\'s this app used for?\n
+        I made This app as an educational tool to learn ciphering techniques for students in android.
+        Offering the ability to test provided ciphers in an easy way.\n
+        Made by S.E. Muhammad Ali.\n
+        Contact me :\n
+    </string>
+    <string name="twitter">"https://twitter.com/ZaTribune"</string>
+    <string name="github">"https://github.com/ZaTribune"</string>
+    <string name="linkedin">"https://www.linkedin.com/in/zatribune/"</string>
+    <string name="phone">+201114388288</string>
 </resources>

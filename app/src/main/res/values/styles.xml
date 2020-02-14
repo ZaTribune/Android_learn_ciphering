@@ -3,17 +3,13 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/red1</item>
         <item name="colorPrimaryDark">@color/red2</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColor">@color/red2</item>
 
     </style>
-    <style name="drawer_list_theme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:textColor">@color/white0</item>
-        <item name="android:background">@color/colorPrimary</item>
 
-    </style>
     <style name="Theme0" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/red2</item>
