@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:minHeight="?attr/actionBarSize"
+    app:contentInsetStart="0dp"
+    app:contentInsetEnd="0dp"
+    >
+    <!--we use the [app:contentInsetStart & app:contentInsetEnd] to
+        remove extra spaces from the start and the end of the toolbar
+    -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        >
+        <Button
+            android:id="@+id/btn_drawer"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/drawer_me"
+            android:onClick="controlDrawer"
+            />
+        <TextView
+            android:id="@+id/action_bar_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/btn_drawer"
+            android:layout_toEndOf="@+id/btn_drawer"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white0"
+            />
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/refresh"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            />
+
+
+    </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>

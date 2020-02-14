@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/red2</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/red2</item>
+
+    </style>
+    <style name="drawer_list_theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/white0</item>
+        <item name="android:background">@color/colorPrimary</item>
+
+    </style>
+    <style name="Theme0" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/red2</item>
+        <item name="colorPrimaryDark">@color/red1</item>
+        <item name="colorAccent">@color/red0</item>
+        <item name="android:textColor">@color/yellow0</item>
+        <item name="android:background">@color/red1</item>
+
+    </style>
+    <style name="list_theme_0" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/red2</item>
+        <item name="android:background">@color/white0</item>
+    </style>
+
+</resources>

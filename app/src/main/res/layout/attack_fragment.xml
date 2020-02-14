@@ -1,0 +1,44 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:id="@+id/attack_fragment"
+    tools:context="warhammer.security.testing_inner_fragments.AttackFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_attack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter ciphertext here :"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        />
+    <EditText
+        android:id="@+id/et_attack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_attack"
+        android:background="@drawable/box0"
+        android:layout_marginBottom="10dp"
+        />
+     <Button
+         android:id="@+id/btn_attack"
+         android:layout_width="200dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/et_attack"
+         android:layout_centerHorizontal="true"
+         android:text="Commence Attack"
+         android:textAllCaps="false"
+         android:background="@drawable/btn_passion_disabled"
+         android:textColor="#767676"
+         android:layout_marginBottom="10dp"
+         />
+
+</RelativeLayout>
+</ScrollView>
