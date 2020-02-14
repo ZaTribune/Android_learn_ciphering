@@ -18,16 +18,8 @@
         <FrameLayout
             android:id="@+id/content_frame"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"/>
 
-            <ImageView
-                android:id="@+id/img1"
-                android:layout_width="300dp"
-                android:layout_height="300dp"
-                android:layout_gravity="center"
-                android:src="@drawable/lock_flat2" />
-
-            </FrameLayout>
     </LinearLayout>
         <!-- The navigation main_activity -->
     <LinearLayout
@@ -43,8 +35,9 @@
                 android:layout_height="200dp"
                 android:src="@drawable/header0"
                 android:paddingRight="5dp"
+
                 android:theme="@style/Theme0"
-                android:scaleType="centerCrop" />
+                android:scaleType="centerInside" />
             <ListView
                 android:id="@+id/left_drawer"
                 android:layout_width="240dp"

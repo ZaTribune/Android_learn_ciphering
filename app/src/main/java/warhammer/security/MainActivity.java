@@ -40,39 +40,41 @@ public class MainActivity extends AppCompatActivity implements TestingFragment.T
         titles = getResources().getStringArray(R.array.drawer_titles);
         mDrawerList.setAdapter(new AllAdapter(this,
                 images,titles));
-        mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                //this to clear the back stack from any added fragments
-                for(int i = 0; i < fragmentManager.getBackStackEntryCount(); ++i) {
-                    fragmentManager.popBackStack();
-                }
-                Fragment fragment;
-                switch (position){
-                 case 0:
-                     fragment=new TestingFragment();
-                     fragmentManager.beginTransaction().replace(R.id.content_frame,fragment).addToBackStack("testing").commit();
-                     action_bar_header.setText("Testing");
-                     break;
-                 case 1:
-                     fragment=new LearningFragment();
-                     fragmentManager.beginTransaction().replace(R.id.content_frame,fragment).addToBackStack("learning").commit();
-                     action_bar_header.setText("Learning");
-                     break;
-                 case 2:
-                     fragment=new AboutFragment();
-                     fragmentManager.beginTransaction().replace(R.id.content_frame,fragment).addToBackStack("about").commit();
-                     action_bar_header.setText("About this app ..");
-                     break;
-             }
-                mDrawerLayout.closeDrawers();
-            }
+        mDrawerList.setOnItemClickListener((AdapterView<?> parent,View view,int position,long id) -> {
+             addFragment(position);
         });
+        addFragment(2);
 
     }
-    public void prepareActionBar(){
 
+    public void addFragment(int position){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        //this to clear the back stack from any added fragments
+        for(int i = 0; i < fragmentManager.getBackStackEntryCount(); ++i) {
+            fragmentManager.popBackStack();
+        }
+        Fragment fragment;
+        switch (position){
+            case 0:
+                fragment=new TestingFragment();
+                fragmentManager.beginTransaction().replace(R.id.content_frame,fragment).addToBackStack("testing").commit();
+                action_bar_header.setText(getString(R.string.testing));
+                break;
+            case 1:
+                fragment=new LearningFragment();
+                fragmentManager.beginTransaction().replace(R.id.content_frame,fragment).addToBackStack("learning").commit();
+                action_bar_header.setText(getString(R.string.learning));
+                break;
+            case 2:
+                fragment=new AboutFragment();
+                fragmentManager.beginTransaction().replace(R.id.content_frame,fragment).commit();
+                action_bar_header.setText(getString(R.string.about));
+                break;
+        }
+        mDrawerLayout.closeDrawers();
+    }
+
+    public void prepareActionBar(){
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("");
         action_bar_header= findViewById(R.id.action_bar_header);

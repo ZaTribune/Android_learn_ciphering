@@ -1,6 +1,8 @@
 package warhammer.security.drawer_fragments;
 
 
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
@@ -12,7 +14,6 @@ import android.widget.TextView;
 import warhammer.security.R;
 
 public class LearningFragment extends Fragment {
-    private ImageView img1;
     private TextView action_bar_header;
 
     public LearningFragment() {
@@ -23,12 +24,17 @@ public class LearningFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        img1=(ImageView)getActivity().findViewById(R.id.img1);
-        img1.setVisibility(View.INVISIBLE);
+
         View view=inflater.inflate(R.layout.learning_fragment, container, false);
-        action_bar_header=(TextView)getActivity().findViewById(R.id.action_bar_header);
+
 
         return view;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        action_bar_header= ((Activity)context).findViewById(R.id.action_bar_header);
     }
 
     //this one to clear the actionbar header when going back to the MainActivity using the back button
@@ -36,7 +42,6 @@ public class LearningFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         action_bar_header.setText("");
-        img1.setVisibility(View.VISIBLE);
     }
 
 }
