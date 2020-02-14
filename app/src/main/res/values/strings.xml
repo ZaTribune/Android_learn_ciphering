@@ -8,11 +8,8 @@
     <string name="about">About</string>
     <string name="note_learning_fragment">This component or feature is still under development ...</string>
     <string name="about_info">
-        What\'s this app used for?\n
-        I made This app as an educational tool to learn ciphering techniques for students in android.
-        Offering the ability to test provided ciphers in an easy way.\n
-        Made by S.E. Muhammad Ali.\n
-        Contact me :\n
+        What\'s this app used for?\nI made This app as an educational tool to learn ciphering techniques for students in android.
+        Offering the ability to test provided ciphers in an easy way.\nMade by S.E. Muhammad Ali.\n\nContact me :\n
     </string>
     <string name="twitter">"https://twitter.com/ZaTribune"</string>
     <string name="github">"https://github.com/ZaTribune"</string>
