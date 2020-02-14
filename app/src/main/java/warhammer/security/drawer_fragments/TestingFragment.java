@@ -57,8 +57,6 @@ public class TestingFragment extends Fragment {
     @Override
     public void onDetach() {
         super.onDetach();
-        action_bar_header.setText("");
-
     }
 
     @Override

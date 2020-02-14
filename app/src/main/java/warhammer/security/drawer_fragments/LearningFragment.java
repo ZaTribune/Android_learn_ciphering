@@ -41,7 +41,6 @@ public class LearningFragment extends Fragment {
     @Override
     public void onDetach() {
         super.onDetach();
-        action_bar_header.setText("");
     }
 
 }

@@ -6,6 +6,7 @@
     <string name="testing">Testing</string>
     <string name="learning">Learning</string>
     <string name="about">About</string>
+    <string name="note_learning_fragment">This component or feature is still under development ...</string>
     <string name="about_info">
         What\'s this app used for?\n
         I made This app as an educational tool to learn ciphering techniques for students in android.

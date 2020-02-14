@@ -62,13 +62,11 @@ public class AboutFragment extends Fragment {
     @Override
     public void onDetach() {
         super.onDetach();
-        action_bar_header.setText("");
     }
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        action_bar_header= ((Activity)context).findViewById(R.id.action_bar_header);
-        action_bar_header.setText(getString(R.string.about));
+
     }
 }
