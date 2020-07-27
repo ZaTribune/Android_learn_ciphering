@@ -1,4 +1,4 @@
-# Android_learn_ciphering
+# Android : learn ciphering
 A simple App for learning cryptography.
 <p align="center">
   <img src="screenshots/1.png" height="300"/>
