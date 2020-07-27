@@ -34,8 +34,7 @@
                 android:layout_height="200dp"
                 android:src="@drawable/header0"
                 android:paddingRight="5dp"
-
-                android:theme="@style/Theme0"
+                android:background="@color/colorPrimaryDark"
                 android:scaleType="centerInside" />
             <ListView
                 android:id="@+id/left_drawer"

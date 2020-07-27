@@ -7,25 +7,23 @@
     android:layout_width="match_parent"
     android:minHeight="?attr/actionBarSize"
     app:contentInsetStart="0dp"
-    app:contentInsetEnd="0dp"
-    >
+    app:contentInsetEnd="0dp">
     <!--we use the [app:contentInsetStart & app:contentInsetEnd] to
         remove extra spaces from the start and the end of the toolbar
     -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/red2"
+        android:background="@color/colorPrimaryDark"
         android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        >
+        android:paddingRight="5dp">
         <Button
             android:id="@+id/btn_drawer"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:background="@drawable/drawer"
-            android:onClick="controlDrawer"
-            />
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:onClick="controlDrawer" />
         <TextView
             android:id="@+id/action_bar_header"
             android:layout_width="wrap_content"
@@ -35,19 +33,19 @@
             android:gravity="center"
             android:textSize="17sp"
             android:layout_marginLeft="20dp"
-            android:textColor="@color/white0"
-            />
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white0" />
         <Button
             android:id="@+id/btn_clear"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/refresh"
             android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:visibility="gone"
             android:layout_centerVertical="true"
             android:layout_marginRight="5dp"
-            />
-
+            android:layout_marginEnd="5dp"/>
 
     </RelativeLayout>
 

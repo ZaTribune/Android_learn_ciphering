@@ -30,8 +30,8 @@
            <TableRow android:gravity="center" android:layout_marginBottom="10dp">
                <ImageView
                    android:src="@drawable/icon_twitter"
-                   android:layout_width="50dp"
-                   android:layout_height="50dp" />
+                   android:layout_width="40dp"
+                   android:layout_height="40dp" />
                <TextView
                    android:id="@+id/tv_twitter"
                    android:layout_width="match_parent"
@@ -43,8 +43,8 @@
             <TableRow android:gravity="center" android:layout_marginBottom="10dp">
                 <ImageView
                     android:src="@drawable/icon_github"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp" />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
                 <TextView
                     android:id="@+id/tv_github"
                     android:layout_width="match_parent"
@@ -55,8 +55,8 @@
             <TableRow android:gravity="center">
                 <ImageView
                     android:src="@drawable/icon_linkedin"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp" />
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
                 <TextView
                     android:id="@+id/tv_linkedin"
                     android:layout_width="match_parent"
