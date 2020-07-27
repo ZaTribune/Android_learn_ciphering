@@ -1,10 +1,10 @@
 # Android : learn ciphering
 A simple App for learning cryptography.
 <p align="center">
-  <img src="screenshots/1.png" height="300"/>
-  <img src="screenshots/2.png" height="300"/>
-  <img src="screenshots/3.png" height="300"/>
-  <img src="screenshots/4.png" height="300"/>
+  <img src="app/screenshots/1.png" height="300"/>
+  <img src="app/screenshots/2.png" height="300"/>
+  <img src="app/screenshots/3.png" height="300"/>
+  <img src="app/screenshots/4.png" height="300"/>
 </p>
 
 ## Overview  
